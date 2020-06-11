@@ -1,0 +1,37 @@
+<resources>
+    <string name="app_name">Travel Agency</string>
+    <string name="open">Open</string>
+    <string name="close">Close</string>
+
+    <string-array name="names">
+        <item>Избери държава</item>
+        <item>Австралия</item>
+        <item>Албания</item>
+        <item>Белгия</item>
+        <item>Великобритания</item>
+        <item>Германия</item>
+        <item>Гърция</item>
+        <item>Египет</item>
+        <item>Испания</item>
+        <item>Италия</item>
+        <item>Румъния</item>
+        <item>Сърбия</item>
+        <item>Турция</item>
+        <item>Франция</item>
+        <item>Швейцария</item>
+
+
+    </string-array>
+
+    <string-array name="transport">
+        <item>Избери транспорт</item>
+        <item>Самолет</item>
+        <item>Автобус</item>
+        <item>Кораб</item>
+        <item>Собствен превоз</item>
+
+    </string-array>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

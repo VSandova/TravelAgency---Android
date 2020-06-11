@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <android.support.v4.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true">
+
+            <LinearLayout
+                android:id="@+id/GL"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:background="@color/white"
+                android:orientation="vertical">
+
+                <android.support.v4.view.ViewPager
+                    android:id="@+id/sldier_pager"
+                    android:layout_width="wrap_content"
+                    android:layout_height="250dp"
+                    android:scaleType="centerCrop">
+
+                </android.support.v4.view.ViewPager>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:gravity="center"
+                    android:text="Търсене"
+                    android:textColor="@color/fb"
+                    android:textSize="24sp"
+                    android:textStyle="bold"
+                    android:visibility="visible"></TextView>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="80dp"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/m"></ImageView>
+
+                    <Spinner
+                        android:id="@+id/spinner"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@color/white"
+                        android:spinnerMode="dropdown"
+                        android:verticalScrollbarPosition="defaultPosition">
+
+                    </Spinner>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="80dp"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/t">
+
+                    </ImageView>
+
+                    <Spinner
+                        android:id="@+id/spinner1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@color/white"
+                        android:spinnerMode="dropdown"
+                        android:verticalScrollbarPosition="defaultPosition">
+
+                    </Spinner>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="80dp"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/c"></ImageView>
+
+
+                    <TextView
+                        android:id="@+id/textView"
+                        android:layout_width="70dp"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:text="От"
+                        android:textColor="@color/black" />
+
+                    <EditText
+                        android:id="@+id/editText2"
+                        android:layout_width="90dp"
+                        android:layout_height="match_parent"
+                        android:inputType="date" />
+
+                    <TextView
+                        android:id="@+id/textView2"
+                        android:layout_width="70dp"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:text="До"
+                        android:textColor="@color/black" />
+
+                    <EditText
+                        android:id="@+id/editText3"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:ems="10"
+                        android:inputType="date" />
+
+                </LinearLayout>
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_marginTop="6dp"
+                    android:layout_marginBottom="6dp"
+                    android:background="@color/fb"
+                    android:gravity="center"
+                    android:text="Търси"
+                    android:textColor="@color/white"
+                    android:textSize="24sp"
+                    android:textStyle="bold"
+                    android:visibility="visible"></Button>
+
+                <LinearLayout
+                    android:id="@+id/layoutAlbania"
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp">
+
+                    <ImageView
+                        android:layout_width="150dp"
+                        android:layout_height="match_parent"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/a"></ImageView>
+
+                    <TextView
+                        android:layout_width="190dp"
+                        android:layout_height="200dp"
+                        android:text="Албания - екскурзия с автобус 3 нощувки със закуски"
+                        android:textColor="@color/black"></TextView>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="Цена от: 300 лв."
+                        android:textColor="@color/black"></TextView>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp">
+
+                    <ImageView
+                        android:layout_width="150dp"
+                        android:layout_height="match_parent"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/vienna"></ImageView>
+
+                    <TextView
+                        android:layout_width="190dp"
+                        android:layout_height="200dp"
+                        android:text="Предколедна екскурзия до Виена и Будапеща с автобус за 5 дни
+        "
+                        android:textColor="@color/black"></TextView>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="Цена от: 380 лв."
+                        android:textColor="@color/black"></TextView>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp">
+
+                    <ImageView
+                        android:layout_width="150dp"
+                        android:layout_height="match_parent"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/b"></ImageView>
+
+                    <TextView
+                        android:layout_width="190dp"
+                        android:layout_height="200dp"
+                        android:text="Самолетна екскурзия до Брюксел за 4 дни"
+                        android:textColor="@color/black"></TextView>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="Цена от: 420 лв."
+                        android:textColor="@color/black"></TextView>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp">
+
+                    <ImageView
+                        android:layout_width="150dp"
+                        android:layout_height="match_parent"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/l"></ImageView>
+
+                    <TextView
+                        android:layout_width="190dp"
+                        android:layout_height="200dp"
+                        android:text="Уикенд в Лондон със самолет за 4 дни"
+                        android:textColor="@color/black"></TextView>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="Цена от: 950 лв."
+                        android:textColor="@color/black"></TextView>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp">
+
+                    <ImageView
+                        android:layout_width="150dp"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/ger"
+                        android:scaleType="centerCrop"></ImageView>
+
+                    <TextView
+                        android:textColor="@color/black"
+                        android:layout_width="190dp"
+                        android:layout_height="200dp"
+                        android:text="Екскурзия до Берлин - коледни базари - със самолет за 4 дни "></TextView>
+
+                    <TextView
+                        android:textColor="@color/black"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="Цена от: 780 лв."></TextView>
+                </LinearLayout>
+
+
+            </LinearLayout>
+        </ScrollView>
+
+        <android.support.design.widget.NavigationView
+        android:id="@+id/navigation"
+        android:layout_width="match_parent"
+        android:layout_height="700dp"
+        android:layout_gravity="start"
+        android:background="@color/white"
+        app:menu="@menu/drawer">
+
+    </android.support.design.widget.NavigationView>
+
+</android.support.v4.widget.DrawerLayout>
+
+
+
+
+
+
